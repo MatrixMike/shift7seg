@@ -33,11 +33,11 @@ void loop()
   delay(200);
 
   char y[11] = {'c', 'o', 'o', 'l', ' ', 'b', 'E', 'A', 'n', 'S'}; 
-  shift.load_data(y, 11);     //load and array of char's just like we did earlier using an array of bytes(a.k.a. uint8_t).
+  shift.load_data(y, 11);     //load an array of char's just like we did earlier using an array of bytes(a.k.a. uint8_t).
   shift.blank_display();      //function to clear the display
   delay(200);
   
-  int x = 10000;        //displays an error when int are larger than 9999. this function wont scroll , use an array of bytes for that.
+  int x = 10000;        //displays an error when ints are larger than 9999. this function wont scroll , use an array of bytes for that.
   shift.load_data(x);   // takes a single parameter (int)
 
   
